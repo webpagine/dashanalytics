@@ -1,0 +1,5 @@
+stage:
+  - job:
+      - type: "tsc/v1"
+        title: "Build TypeScript"
+        path: "/script/"

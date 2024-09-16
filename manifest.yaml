@@ -1,0 +1,9 @@
+manifest:
+  canonical: "com.github.webpagine.dashanalytics"
+  std: "v1"
+  patterns:
+    - "/templates/*"
+
+templates:
+  - export: "analytics.html"
+    name: "apply"

@@ -11,6 +11,6 @@ function initAnalytics() {
 }
 
 function reportAccess(host: string, deployTime: string) {
-    fetch(`${host}/api/v1/reportAccess?uuid=${uuid}&deploy_time=${deployTime}&target=${window.location.href}&user_agent=${window.navigator.userAgent}`).then(() => {
+    fetch(`${host}/api/v1/reportAccess?uuid=${uuid}&deploy_time=${deployTime}&target=${encodeURIComponent(window.location.href)}&user_agent=${encodeURIComponent(window.navigator.userAgent)}`).then(() => {
     })
 }
